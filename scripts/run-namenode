@@ -1,0 +1,6 @@
+#! /usr/bin/env sh
+
+# hadoop name node
+/format-hdfs
+hdfs --config "$HADOOP_CONF_DIR" namenode
+

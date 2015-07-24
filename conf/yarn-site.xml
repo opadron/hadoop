@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<configuration>
+
+<property>
+ <name>yarn.resourcemanager.hostname</name>
+<value>resourcemanager</value></property>
+
+<property>
+ <name>yarn.resourcemanager.webapp.address</name>
+<value>resourcemanager:80</value></property>
+
+<property>
+ <name>yarn.nodemanager.hostname</name>
+<value>0.0.0.0</value></property>
+
+<property>
+ <name>yarn.nodemanager.webapp.address</name>
+<value>0.0.0.0:80</value></property>
+
+<property>
+ <name>yarn.web-proxy.address</name>
+<value>webproxy:80</value></property>
+
+</configuration>

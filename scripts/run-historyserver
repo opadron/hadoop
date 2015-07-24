@@ -1,0 +1,5 @@
+#! /usr/bin/env sh
+
+# map reduce history server
+mapred --config "$HADOOP_CONF_DIR" historyserver
+

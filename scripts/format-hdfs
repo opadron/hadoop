@@ -1,0 +1,15 @@
+#! /usr/bin/env sh
+
+# hadoop hdfs format: only needs to run once
+formatted_file="/shared/hdfs_formatted"
+if [ '!' -f "$formatted_file" ] ; then
+    hdfs --config "$HADOOP_CONF_DIR" namenode -format -force && (
+        echo
+        echo 'The presence of this file indicates that an HDFS file'
+        echo 'system is contained within it and is appropriately'
+        echo 'formatted.  To reformat, remove this file and restart'
+        echo 'the namenode service.'
+        echo
+    ) > "$formatted_file"
+fi
+

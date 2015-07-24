@@ -1,0 +1,4 @@
+#! /usr/bin/env sh
+
+hdfs --config "$HADOOP_CONF_DIR" datanode
+

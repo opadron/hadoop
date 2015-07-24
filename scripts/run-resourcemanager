@@ -1,0 +1,5 @@
+#! /usr/bin/env sh
+
+# yarn resource manager
+yarn   --config "$HADOOP_CONF_DIR" resourcemanager
+

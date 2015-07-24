@@ -1,0 +1,5 @@
+#! /usr/bin/env sh
+
+# yarn proxy server
+yarn   --config "$HADOOP_CONF_DIR" proxyserver
+
