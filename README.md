@@ -1,0 +1,2 @@
+
+Hadoop image for Docker
